@@ -11,6 +11,7 @@ export default class Post extends React.Component {
             <Layout {...this.props}>
               <article className="post post-full">
                 <header className="post-header">
+                <div className="post-meta"></div>
 
                 </header>
                 {_.get(this.props, 'pageContext.frontmatter.subtitle') && 
@@ -21,10 +22,10 @@ export default class Post extends React.Component {
                 {_.get(this.props, 'pageContext.frontmatter.content_img_path') && 
                 <div className="post-thumbnail">
                   <img className="thumbnail" src={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
-                  <div className="post-meta">
+
                     <time className="published"
                       dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%A, %B %e, %Y')}</time>
-                  </div>
+
 					<h1 className="post-title-inimg">{_.get(this.props, 'pageContext.frontmatter.title')}</h1>
                 	{htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle'))}
 	            </div>
