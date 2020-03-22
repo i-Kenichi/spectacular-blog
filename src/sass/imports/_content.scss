@@ -21,7 +21,20 @@
 
 .post-title {
   font-size: 2.66667rem;
-  /*margin: 0 0 1.66667rem;*/
+  margin: 0 0 1.66667rem;
+
+  a {
+    border: 0;
+    color: inherit;
+
+    &:hover {
+      color: _palette(primary);
+    }
+  }
+}
+
+.post-title-inimg {
+  font-size: 2.66667rem;
 
   position: absolute;
   top: 50%;
