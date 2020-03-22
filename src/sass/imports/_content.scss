@@ -21,7 +21,16 @@
 
 .post-title {
   font-size: 2.66667rem;
-  margin: 0 0 1.66667rem;
+  /*margin: 0 0 1.66667rem;*/
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
 
   a {
     border: 0;
@@ -36,16 +45,7 @@
 .post-subtitle {
   font-size: 1.33333rem;
   line-height: 1.5;
-  /*margin-bottom: 2.5rem;*/
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+  margin-bottom: 2.5rem;
 }
 
 .post-thumbnail {
