@@ -62,9 +62,10 @@
 }
 
 .post-thumbnail {
-  /* display: block; */
+  display: block;
   display: inline-block;
   margin-bottom: 2.5rem;
+  position: relative;
 
   img {
     width: 100%;
