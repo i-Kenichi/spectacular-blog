@@ -23,7 +23,7 @@ export default class Post extends React.Component {
                 <div className="post-thumbnail">
                   <img className="thumbnail" src={safePrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path'))} alt={_.get(this.props, 'pageContext.frontmatter.title')} />
 
-                    <time className="published"
+                    <time className="post-time-inimg"
                       dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date')).strftime('%A, %B %e, %Y')}</time>
 
 					<h1 className="post-title-inimg">{_.get(this.props, 'pageContext.frontmatter.title')}</h1>

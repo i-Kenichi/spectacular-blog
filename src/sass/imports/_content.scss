@@ -56,6 +56,18 @@
     }
   }
 }
+.post-time-inimg {
+  color : whitesmoke;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+
+}
 
 .post-subtitle {
   font-size: 1.33333rem;
@@ -66,17 +78,8 @@
 .post-thumbnail {
   display: block;
   display: inline-block;
-  /*margin-bottom: 2.5rem;
-  position: relative;*/
-
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
+  margin-bottom: 2.5rem;
+  position: relative;
 
   img {
     width: 100%;
